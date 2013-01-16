@@ -8,24 +8,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/**
- *
- */
-enum {
-	SOM, SUB, MUL, DIV, AT, AP, FP, NUM, ID
-};
-
-typedef int** MatrizEstado;
-
-typedef struct {
-	MatrizEstado matrizEstado;
-	int estadoAtual;
-	int quantidadeDeEstados;
-	int quantidadeDeSimbolos;
-} TipoAutomato;
-
-typedef TipoAutomato* Automato;
-
 Automato allocate(FILE *configuracao) {
 	Automato automato = (Automato) malloc(sizeof(TipoAutomato));
 	MatrizEstado matriz;

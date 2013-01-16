@@ -5,10 +5,3 @@
  *      Author: john.henrique
  */
 
-
-enum {
-	SOM, SUB, MUL, DIV, AT, AP, FP, NUM, ID
-};
-
-
-int

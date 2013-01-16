@@ -5,26 +5,10 @@
  *      Author: john.henrique
  */
 
+#include "DefinicaoAutomato.h"
+
 #ifndef AUTOMATO_H_
 #define AUTOMATO_H_
-
-/**
- *
- */
-enum {
-	SOM, SUB, MUL, DIV, AT, AP, FP, NUM, ID
-};
-
-typedef int** MatrizEstado;
-
-typedef struct {
-	MatrizEstado matrizEstado;
-	int estadoAtual;
-	int quantidadeDeEstados;
-	int quantidadeDeSimbolos;
-} TipoAutomato;
-
-typedef TipoAutomato* Automato;
 
 Automato allocate(FILE *configuracao);
 
